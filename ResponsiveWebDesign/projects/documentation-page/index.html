@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<nav id="navbar">
+    <header>HTML Semantic Elements.</header>
+    <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li>
+            <a class="nav-link" href="#What_are_Semantic_Elements">
+                What are Semantic Elements
+            </a>
+        </li>
+        <li>
+            <a class="nav-link" href="#HTML_section_Element">
+                HTML section Element
+            </a>
+        </li>
+        <li>
+            <a class="nav-link" href="#HTML_article_Element">HTML article Element
+            </a>
+        </li>
+
+        <li>
+            <a class="nav-link" href="#HTML_header_Element">HTML header Element</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#HTML_nav_Element">HTML nav Element</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#HTML_aside_Element">HTML aside Element</a>
+        </li>        
+        <li><a class="nav-link" href="#HTML_figure_and_figcaption_Elements">HTML figure and figcaption Elements</a></li>
+        <a class="nav-link" href="#HTML_footer_Element">HTML footer Element</a>
+        </li>
+
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <article>
+            <p>
+                “Semantic HTML” refers to the idea that all your HTML markup should convey the underlying meaning of
+                your content—not its appearance. We’ve already been writing semantic HTML (e.g., using &lt;strong&gt;
+                element,instead of &lt;b&gt;), but there’s a whole set of elements designed for the sole purpose of
+                adding more meaning to the overall layout of a web page.
+            </p>
+            <p>
+                Using these as an alternative to <strong>&lt;div&gt;</strong> elements is an important aspect of modern
+                web
+                development because it makes it easier for search engines, screen readers, and other machines to
+                identify the different parts of your website. It also helps you as a developer keep your site organized,
+                which, in turn, makes it easier to maintain.
+            </p>
+
+            <cite><a href="https://www.internetingishard.com/html-and-css/semantic-html/">by internetingishard.com
+                </a></cite>
+        </article>
+    </section>
+    <section class="main-section" id="What_are_Semantic_Elements">
+        <header>What are Semantic Elements</header>
+        <article>
+            <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+
+            <p>Examples of non-semantic elements: div and span - Tells nothing about its content.</p>
+
+            <p>Examples of semantic elements:
+            <ul>
+                <li>&lt;form&gt; - Defines an HTML form for user input</li>
+                <li>&lt;table&gt; - Defines a table</li>
+                <li>&lt;article&gt; - Defines independent, self-contained content</li>
+                <li>&lt;aside&gt; - Defines content aside from the page content</li>
+                <li>&lt;detail&gt; - Defines additional details that the user can view or hide</li>
+                <li>&lt;figcaption&gt; - Defines a caption for a &lt;figure&gt; element</li>
+                <li>&lt;figure&gt; - Specifies self-contained content, like illustrations, diagrams, photos, code
+                    listings, etc.</li>
+                <li>&lt;footer&gt; - Defines a footer for a document or section</li>
+                <li>&lt;header&gt; - Specifies a header for a document or section</li>
+                <li>&lt;main&gt; - Specifies the main content of a document</li>
+                <li>&lt;mark&gt; - Defines marked/highlighted text</li>
+                <li>&lt;nav&gt; - Defines navigation links</li>
+                <li>&lt;section&gt; - Defines a section in a document</li>
+                <li>&lt;summary&gt; - Defines a visible heading for a &lt;details&gt; element</li>
+                <li>&lt;time&gt; - Defines a date/time</li>
+
+            </ul>
+            form, table, and article - Clearly defines its content.
+            </p>
+
+            <h2>Example:</h2>
+            <p>Image showing some semantic HTML Layout.</p>
+            <img src="./img_sem_elements.gif" alt="Page layout">
+
+        </article>
+    </section>
+    <section class="main-section" id="HTML_section_Element">
+        <header>HTML section Element</header>
+        <article>
+            <p>
+                The &lt;section&gt; element defines a section in a document. According to W3C's HTML documentation: "A
+                section
+                is a thematic grouping of content, typically with a heading."
+            </p>
+            <p>
+                Examples of where a &lt;section&gt; element can be used:
+            <ul>
+                <li>Chapters</li>
+                <li>Introduction</li>
+                <li>News items</li>
+                <li>Contact information</li>
+            </ul>
+
+            </p>
+            <p>
+                A web page could normally be split into sections for introduction, content, and contact information.
+            </p>
+
+            <h2>Example</h2>
+            <p>Two sections in a document.</p>
+            <code>
+                &lt;section&gt;
+                    &lt;h1&gtWWF&lt;&#92;h1&gt;
+                    &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;&#92;p&gt;
+                &lt;&#92;section&gt;
+                    
+                &lt;section&gt;
+                    &lt;h1&gtWWF's Panda symbol&lt;&#92;h1&gt;
+                    &lt;p&gt;The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.&lt;&#92;p&gt;
+                &lt;&#92;section&gt;
+            </code>
+        </article>
+    </section>
+    <section class="main-section" id="HTML_article_Element">
+        <header>HTML article Element</header>
+        <article>
+            <p>
+                The &lt;article&gt; element specifies independent, self-contained content. An article should make sense
+                on
+                its own, and it should be possible to distribute it independently from the rest of the web site.
+            </p>
+            <p>
+                Examples of where the &lt;article&gt; element can be used:
+            <ul>
+                <li>Forum posts</li>
+                <li>Blog posts</li>
+                <li>User comments</li>
+                <li>Product cards</li>
+                <li>Newspaper article</li>
+            </ul>
+            </p>
+            <h3>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h3>
+            <p>The &lt;article&gt; element specifies independent, self-contained content. The &lt;section&gt; element
+                defines section in a document.&lt;&#92;p&gt;
+
+            <p>
+                Can we use the definitions to decide how to nest those elements? No, we cannot! <br> So, you will find
+                HTML pages with &lt;section&gt; elements containing &lt;article&gt; elements, and &lt;article&gt;
+                elements
+                containing &lt;section&gt; elements.
+            </p>
+
+            <h2>Example:</h2>
+            <p>Three articles with independent, self-contained content</p>
+            <code>
+                &lt;article&gt;
+                &lt;h2&gt;Google Chrome&lt;&#92;p&gt;
+                    &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;&#92;p&gt;
+                &lt;&#92;article&gt;
+                    
+                &lt;article&gt;
+                &lt;h2&gt;Mozilla Firefox&lt;&#92;p&gt;
+                    &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;&#92;p&gt;
+                &lt;&#92;article&gt;
+                    
+                &lt;article&gt;
+                &lt;h2&gt;Microsoft Edge&lt;&#92;h2&gt;
+                    &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;&#92;p&gt;
+                &lt;&#92;article&gt;
+            </code>
+
+
+
+    </section>
+    <section class="main-section" id="HTML_header_Element">
+        <header>HTML header Element</header>
+        <article>
+            <p>
+                The &lt;header&gt; element represents a container for introductory content or a set of navigational
+                links.
+                A &lt;header&gt; element typically contains:
+            <ul>
+                <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+                <li>logo or icon</li>
+                <li>authorship information</li>
+            </ul>
+            </p>
+            <p>
+                <strong>Note:</strong> You can have several &lt;header&gt; elements in one HTML document. However,
+                &lt;header&gt; cannot be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt;
+                element.
+            </p>
+
+            <h2>Example:</h2>
+            <p>A header for an &lt;article&gt;</p>
+            <code>
+                &lt;article&gt;
+                    &lt;header&gt;
+                    &lt;h1&gt;What Does WWF Do?&lt;&#92;h1&gt;
+                    &lt;p&gt;WWF's mission:&lt;&#92;p&gt;
+                    &lt;&#92;header&gt;
+                    &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,
+                    and build a future in which humans live in harmony with nature.&lt;&#92;p&gt;
+                &lt;&#92;article&gt;
+            </code>
+
+        </article>
+    </section>
+    <section class="main-section" id="HTML_footer_Element">
+        <header>HTML footer Element</header>
+        <article>
+            <p>
+                The &lt;footer&gt; element defines a footer for a document or section. A &lt;footer&gt; element
+                typically
+                contains:
+            <ul>
+                <li>authorship information</li>
+                <li>copyright information</li>
+                <li>contact information</li>
+                <li>sitemap</li>
+                <li>back to top links</li>
+                <li>related documents</li>
+            </ul>
+            </p>
+            <p>
+                You can have several &lt;footer&gt; elements in one document.
+            </p>
+        </article>
+
+        <h2>Example:</h2>
+        <p>A footer section in a document.</p>
+        <code>
+            &lt;footer&gt;
+            &lt;p&gt;Author: Hege Refsnes&lt;&#92;p&gt;
+            &lt;p&gt;&lt;a href="mailto:hege@example.com">hege@example.com&lt;&#92;a&gt;&lt;&#92;p&gt;
+            &lt;&#92;footer&gt;
+        </code>
+    </section>
+    <section class="main-section" id="HTML_nav_Element">
+        <header>HTML nav Element</header>
+        <article>
+            <p>
+                The &lt;nav&gt; element defines a set of navigation links. Notice that NOT all links of a document
+                should
+                be inside a &lt;nav&gt; element. The &lt;nav&gt; element is intended only for major blocks of navigation
+                links.
+            </p>
+            <p>
+                Browsers, such as screen readers for disabled users, can use this element to determine whether to omit
+                the initial rendering of this content.
+            </p>
+
+            <h2>Example:</h2>
+            <p>A set of navigation links.</p>
+            <code>
+                &lt;nav&gt;
+                    &lt;a href="/html/">HTML&lt;&#92;a&gt; 
+                    &lt;a href="/css/">CSS&lt;&#92;a&gt;
+                    &lt;a href="/js/">JavaScript&lt;&#92;a&gt;
+                    &lt;a href="/jquery/">jQuery&lt;&#92;a&gt;
+                &lt;&#92;nav&gt;
+            </code>
+        </article>
+    </section>
+    <section class="main-section" id="HTML_aside_Element">
+        <header>HTML aside Element</header>
+        <article>
+            <p>
+                The &lt;aside&gt; element defines some content aside from the content it is placed in (like a sidebar).
+            </p>
+            <p>
+                The &lt;aside&gt; content should be indirectly related to the surrounding content.
+            </p>
+        </article>
+
+        <h2>Example:</h2>
+        <p>Display some content aside from the content it is placed in.</p>
+        <code>
+            &lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;&#92;p&gt
+            &lt;aside&gt;
+                &lt;h4&gt;Epcot Center&lt;h4&gt;
+                &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;&#92;p&gt;
+            &lt;&#92;aside&gt;
+        </code>
+
+    </section>
+    <section class="main-section" id="HTML_figure_and_figcaption_Elements">
+        <header>HTML figure and figcaption Elements</header>
+        <article>
+            <p>
+                The &lt;figure&gt; tag specifies self-contained content, like illustrations, diagrams, photos, code
+                listings, etc.
+            </p>
+            <p>
+                The &lt;figcaption&gt; tag defines a caption for a &lt;figure&gt; element. The &lt;figcaption&gt;
+                element can
+                be placed as the first or as the last child of a &lt;figure&gt; element.
+            </p>
+            <p>
+                The &lt;img&gt; element defines the actual image/illustration.
+            </p>
+        </article>
+
+        <h2>Example:</h2>
+        <code>
+            &lt;figure&gt;
+                &lt;img src="pic_trulli.jpg" alt="Trulli"&#92;&gt;
+                &lt;figcaption&gt;Fig1. - Trulli, Puglia, Italy.&lt;&#92;figcaption&gt;
+            &lt;&#92;figure&gt;
+        </code>
+    </section>
+    <section class="main-section" id="reference">
+        <header>Reference</header>
+        <article>
+            <ul>
+                <li>
+                    All the documentation in this page is taken from
+                    <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">
+                        w3schools
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+</main>
+</body>
+
+</html>
